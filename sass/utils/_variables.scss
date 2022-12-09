@@ -1,0 +1,27 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --button-bg-color: #F5F4FA;
+    --button-accent-color: #FFFFFF;
+    --hero-bg-color: #2F303A;
+    --primary-white-color: #F5F5F5;
+    --overlay-hero: rgba(47, 48, 58, 0.4);
+    --icon-feature: #F5F4FA;
+    --icon-staff: #AFB1B8;
+    --icon-bg-hover: #2196F3;
+    --icon-accent: #FFFFFF;
+    --green: #0b951b;
+    --mistake: #950b0d;
+    --error: #eaed3b;
+    --border-backdrop: rgba(33, 33, 33, 0.2);
+    --accent-bg-color: #188CE8;
+}
+
+@mixin font($ff, $fw, $fs, $lh, $ls) {
+    font-family: $ff;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+}

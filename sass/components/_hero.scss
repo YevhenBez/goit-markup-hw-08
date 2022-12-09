@@ -1,0 +1,51 @@
+.hero {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,
+            var(--overlay-hero),
+            var(--overlay-hero)),
+        url(../images/discussion.jpg);
+    background-color: var(--hero-bg-color);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero__title {
+    margin-bottom: 30px;
+    color: var(--button-accent-color);
+
+    @include font(null, 900, 44px, 1.36, null);
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero__button {
+    display: inline-block;
+    color: var(--button-accent-color);
+    background-color: var(--accent-color);
+
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 216px;
+    border: 0px;
+
+    @include font(null, 700, 16px, 1.87, 0.06em);
+
+    cursor: pointer;
+
+    transition-property: box-shadow, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    outline: none;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        background-color: var(--accent-bg-color);
+    }
+}
