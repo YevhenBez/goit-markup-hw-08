@@ -1,10 +1,22 @@
+// В оригинале у .page-header__logo было
+//         font-family: Raleway, sans-serif;
+// но я убрал sans-serif;
+// добавил  font-weight: 700;
+// В font-size: 26px; поставил значение 24рх
+// В line-height: 1.19;  поставил значение 1.17
+// Добавил letter-spacing: 0.03em;
+// чтобы было как на макете для Мобильного
+
 .page-header__logo {
     color: var(--accent-color);
 
-    font-family: Raleway, sans-serif;
+    font-family: Raleway;
+    font-weight: 700;
 
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
+
+    letter-spacing: 0.03em;
 
     text-decoration: none;
 }
@@ -32,8 +44,12 @@
     margin-left: 93px;
 }
 
+// В .page-header__site-nav  в оригинале было display: flex;
+// Я поставил display: none;
+// чтобы начать с Мобильной версии согласно макета
+
 .page-header__site-nav {
-    display: flex;
+    display: none;
 }
 
 .page-header__site-nav .item:not(:last-child) {
@@ -87,8 +103,12 @@
     background: var(--accent-color);
 }
 
+// В .page-header__contacts-list в оригинале было display: flex;
+// Я поставил display: none;
+// чтобы начать с Мобильной версии согласно макета
+
 .page-header__contacts-list {
-    display: flex;
+    display: none;
     margin-left: auto;
 }
 

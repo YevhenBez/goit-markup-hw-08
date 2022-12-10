@@ -1,5 +1,13 @@
+// В оригинале в .hero
+// также было padding-top: 200px;
+// padding-bottom: 200px;
+// я сделал padding-top: 118px;
+// padding-bottom: 118px;
+// чтобы было как на макете для Мобильного
+
 .hero {
     max-width: 1600px;
+
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right,
@@ -8,20 +16,35 @@
         url(../images/discussion.jpg);
     background-color: var(--hero-bg-color);
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @media screen and (min-width: 480px) {
+        max-width: 100%;
+    }
 }
+
+// В оригинале в .hero__title
+// было     @include font(null, 900, 44px, 1.36, 0.06em);
+// я сделал @include font(Roboto, null, 26px, 1.61, 0.06em);
+// чтобы было как на макете для Мобильного
 
 .hero__title {
     margin-bottom: 30px;
     color: var(--button-accent-color);
 
-    @include font(null, 900, 44px, 1.36, null);
+    @include font(Roboto, null, 26px, 1.61, 0.06em);
 
     text-align: center;
-    letter-spacing: 0.06em;
     text-transform: uppercase;
 }
+
+// В оригинале в .hero__button
+// было padding: 10px 32px;
+// я сделал padding: 10px 24px;
+// было min-width: 216px;
+// я сделал min-width: 200px;
+// чтобы было как на макете для Мобильного
 
 .hero__button {
     display: inline-block;
@@ -29,8 +52,8 @@
     background-color: var(--accent-color);
 
     border-radius: 4px;
-    padding: 10px 32px;
-    min-width: 216px;
+    padding: 10px 24px;
+    min-width: 200px;
     border: 0px;
 
     @include font(null, 700, 16px, 1.87, 0.06em);

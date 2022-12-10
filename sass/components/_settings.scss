@@ -32,8 +32,12 @@ ul {
     letter-spacing: 0.03em;
 }
 
+// В .container 
+// я закомментировал width: 1200px;
+// чтобы было как на макете для Мобильного
+
 .container {
-    width: 1200px;
+    // width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
