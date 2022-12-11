@@ -1,5 +1,10 @@
+// В .section-works
+// Поставил display: none;
+// Чтобы было как на макете для Мобильного
+
 .section-works {
     padding-top: 0px;
+    display: none;
 }
 
 .list-works {
@@ -39,17 +44,25 @@
     background-color: var(--button-bg-color);
 }
 
+// В .section-title
+// было @include font(null, null, 36px, 1.16, null);
+// сделал @include font(Roboto, 700, 28px, 1.18, 0.03em);
+
 .section-title {
     margin-bottom: 50px;
     color: var(--title-text-color);
 
-    @include font(null, null, 36px, 1.16, null);
+    @include font(Roboto, 700, 28px, 1.18, 0.03em);
 
     text-align: center;
 }
 
+// В .staff
+// Закомментировал display: flex;
+// Чтобы было как на макете для Мобильного
+
 .staff {
-    display: flex;
+    // display: flex;
     gap: 30px;
 }
 
@@ -59,6 +72,15 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     text-align: center;
+}
+
+// Создал .img-team {
+//     width: 100%;
+// }
+// Чтобы было как на макете для Мобильного
+
+.img-team {
+    width: 100%;
 }
 
 .staff-demyanenko,
@@ -120,3 +142,6 @@
             outline: none;
         }
 }
+
+
+

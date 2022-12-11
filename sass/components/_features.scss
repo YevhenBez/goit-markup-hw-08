@@ -1,13 +1,34 @@
+// В .features-list закомментировал display: flex;
+// Чтобы было как на макете для Мобильного
+
 .features-list {
-    display: flex;
+    // display: flex;
 }
+
+// В .features-list__item
+// было width: 270px;
+// сделал width: 100%;
+// Чтобы было как на макете для Мобильного
 
 .features-list__item {
-    width: 270px;
+    // width: 270px;
+    width: 100%;
 }
 
+// Создал .features-list__item:not(:last-child)
+// со значением margin-bottom: 30px;
+// Чтобы было как на макете для Мобильного
+
+.features-list__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+// В .features-list .features-list__item+.features-list__item
+// закомментировал margin-left: 30px;
+// Чтобы было как на макете для Мобильного
+
 .features-list .features-list__item+.features-list__item {
-    margin-left: 30px;
+    // margin-left: 30px;
 }
 
 .features-list__link {
@@ -21,13 +42,26 @@
     border-radius: 4px;
 }
 
+// В .features-list .features-list__title
+// Добавил text-align: center
+// было   @include font(null, null, 14px, 1.14, null);
+// сделал @include font(Roboto, 700, 14px, 1.14, 0,03em);
+//  text-align: center
+// Чтобы было как на макете для Мобильного
+
 .features-list .features-list__title {
     margin-bottom: 10px;
     color: var(--title-text-color);
 
-    @include font(null, null, 14px, 1.14, null);
+    @include font(Roboto, 700, 14px, 1.14, 0.03em);
+    text-align: center
 }
 
+// В .features-list .text
+// было @include font(null, 400, 14px, 1.71, null);
+// сделал @include font(Roboto, 400, 14px, 1.71, 0.03em);
+// Чтобы было как на макете для Мобильного
+
 .features-list .text {
-    @include font(null, 400, 14px, 1.71, null);
+    @include font(Roboto, 400, 14px, 1.71, 0.03em);
 }

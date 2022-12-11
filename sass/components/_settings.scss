@@ -20,9 +20,14 @@ ul {
     list-style: none;
 }
 
+// В .section 
+// padding-top: 94px; я поставил значение 60рх
+// и padding-bottom: 94px; я поставил значение 60рх
+// Чтобы было как на макете для Мобильного
+
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .page {
