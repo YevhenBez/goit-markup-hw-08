@@ -31,13 +31,50 @@
 
 /* Site nav */
 
+// В .page-heade
+// создал padding-top: 16px;
+// создал padding-bottom: 16px;
+// создал position: relative;
+// чтобы было как на макете для Мобильного
+
 .page-header {
     border-bottom: 1px solid #ECECEC;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    position: relative;
 }
 
 .page-header__container {
     display: flex;
     align-items: center;
+}
+
+// Добавил .page-header__menu со всеми вложениями
+// чтобы начать с Мобильной версии согласно макета
+
+.page-header__menu {
+    position: absolute;
+
+    top: 10px;
+    right: 15px;
+
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.page-header__icon-menu {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .page-header__menu:hover &,
+    .page-header__menu:focus & {
+        fill: var(--accent-color);
+    }
 }
 
 .page-header__nav {
