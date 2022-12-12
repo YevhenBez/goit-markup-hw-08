@@ -365,7 +365,7 @@ ul {
 }
 
 .section-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--title-text-color);
   font-family: Roboto;
   font-weight: 700;
@@ -386,6 +386,10 @@ ul {
   text-align: center;
 }
 
+.staff-item {
+  margin-bottom: 30px;
+}
+
 .img-team {
   width: 100%;
 }
@@ -394,21 +398,25 @@ ul {
 .staff-tarasov,
 .staff-repina,
 .staff-ermakov {
-  padding: 30px 0px;
+  padding: 30px 0px 24px;
 }
 
 .staff .staff-title {
   margin-bottom: 10px;
   color: var(--title-text-color);
+  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .staff .text {
+  font-family: Roboto;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   margin-bottom: 16px;
 }
 
@@ -450,20 +458,23 @@ ul {
 
 .clients-title {
   color: var(--title-text-color);
+  font-family: Roboto;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .list-clients {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .item-clients {
-  width: 170px;
+  width: 210px;
   height: 92px;
 }
 
@@ -617,17 +628,12 @@ ul {
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer-contacts {
-  margin-right: 70px;
+  text-align: center;
 }
 
 .logo-footer {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
 .list-contacts a {
@@ -636,7 +642,7 @@ ul {
 
 .footer-map,
 .footer-mail {
-  margin-bottom: 9px;
+  margin-bottom: 12px;
 }
 
 .list-contacts .link-map {
@@ -663,13 +669,15 @@ ul {
 .list-contacts .link-map,
 .list-contacts .link {
   font-style: normal;
+  font-family: Roboto;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 
 .footer-join {
-  margin-right: 93px;
+  text-align: center;
 }
 
 .footer-title {
@@ -685,6 +693,7 @@ ul {
 .footer-list-icon {
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 
 .footer-link-icon {
@@ -716,10 +725,6 @@ ul {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 20px;
-}
-
-.footer-mailing {
-  display: flex;
 }
 
 .footer-in-mail {

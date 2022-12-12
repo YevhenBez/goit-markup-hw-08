@@ -4,27 +4,47 @@
     background-color: var(--hero-bg-color);
 }
 
+// В .footer-container
+// закомментировал display: flex;
+// align-items: baseline;
+// И добавил значение text-align: center;
+// Чтобы было как на макете для Мобильного
+
 .footer-container {
-    display: flex;
-    align-items: baseline;
+//     display: flex;
+//     align-items: baseline;
+    text-align: center;
 }
 
+// в .footer-contacts
+// закомментировал margin-right: 70px;
+// Чтобы было как на макете для Мобильного
+
 .footer-contacts {
-    margin-right: 70px;
+    // margin-right: 70px;
 }
+
+// В .logo-footer
+// значение margin-bottom: 20px; заменил на 28рх
+// Чтобы было как на макете для Мобильного
 
 .logo-footer {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 }
 
 .list-contacts a {
     text-decoration: none;
 }
 
+// В .footer-map,
+// .footer-mail
+// в значении  margin-bottom: 9px; заменил на 12рх
+// Чтобы было как на макете для Мобильного
+
 .footer-map,
 .footer-mail {
-    margin-bottom: 9px;
+    margin-bottom: 12px;
 }
 
 .list-contacts .link-map {
@@ -50,16 +70,27 @@
     color: var(--accent-color);
 }
 
+//  в .link-map
+//  было @include font(null, 400, 14px, 1.71, null);
+//  стало @include font(Roboto, 400, 14px, 1.14, 0.03em);
+//  Чтобы было как на макете для Мобильного
+
 .list-contacts .link-map,
 .list-contacts .link {
 
     font-style: normal;
 
-    @include font(null, 400, 14px, 1.71, null);
+    @include font(Roboto, 400, 14px, 1.14, 0.03em);
 }
 
+// в .footer-join 
+// закомментировал margin-right: 93px;
+// добавил text-align: center;
+// Чтобы было как на макете для Мобильного
+
 .footer-join {
-    margin-right: 93px;
+    // margin-right: 93px;
+    text-align: center;
 }
 
 .footer-title {
@@ -72,9 +103,14 @@
     margin-bottom: 20px;
 }
 
+// Для .footer-list-icon 
+// добавил justify-content: center;
+// Чтобы было как на макете для Мобильного
+
 .footer-list-icon {
     display: flex;
     gap: 10px;
+    justify-content: center;
 }
 
 .footer-link-icon {
@@ -111,8 +147,12 @@
     margin-bottom: 20px;
 }
 
+// В .footer-mailing 
+// закомментировал display: flex;
+// Чтобы было как на макете для Мобильного
+
 .footer-mailing {
-    display: flex;
+    // display: flex;
 }
 
 .footer-in-mail {
