@@ -631,6 +631,10 @@ ul {
   text-align: center;
 }
 
+.footer-contacts {
+  margin-bottom: 60px;
+}
+
 .logo-footer {
   display: block;
   margin-bottom: 28px;
@@ -677,6 +681,7 @@ ul {
 }
 
 .footer-join {
+  margin-bottom: 60px;
   text-align: center;
 }
 
@@ -686,6 +691,7 @@ ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -723,6 +729,7 @@ ul {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
 }

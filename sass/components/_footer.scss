@@ -18,10 +18,12 @@
 
 // в .footer-contacts
 // закомментировал margin-right: 70px;
+// добавил margin-bottom: 60px;
 // Чтобы было как на макете для Мобильного
 
 .footer-contacts {
     // margin-right: 70px;
+    margin-bottom: 60px;
 }
 
 // В .logo-footer
@@ -86,17 +88,24 @@
 // в .footer-join 
 // закомментировал margin-right: 93px;
 // добавил text-align: center;
+// добавил margin-bottom: 60px;
 // Чтобы было как на макете для Мобильного
 
 .footer-join {
     // margin-right: 93px;
+    margin-bottom: 60px;
     text-align: center;
 }
+
+// в .footer-title
+// было @include font(Roboto, 700, 14px, 1.14, null);
+// стало @include font(Roboto, 700, 14px, 1.14, 0.03em);
+// Чтобы было как на макете для Мобильного
 
 .footer-title {
     color: var(--icon-accent);
 
-    @include font(Roboto, 700, 14px, 1.14, null);
+    @include font(Roboto, 700, 14px, 1.14, 0.03em);
     
     text-transform: uppercase;
 
@@ -137,10 +146,15 @@
     fill: var(--icon-accent);
 }
 
+// В .footer-text
+// было @include font(Roboto, 700, 14px, 1.14, null);
+// стало @include font(Roboto, 700, 14px, 1.14, 0.03em);
+// Чтобы было как на макете для Мобильного
+
 .footer-text {
     color: var(--icon-accent);
 
-    @include font(Roboto, 700, 14px, 1.14, null);
+    @include font(Roboto, 700, 14px, 1.14, 0.03em);
     
     text-transform: uppercase;
 
