@@ -13,6 +13,10 @@
     pointer-events: none;
 }
 
+// В .modal-hero изменил значение width: 528px; на 450рх
+// изменил значение min-height: 581px;  на 609рх
+// чтобы начать с Мобильной версии согласно макета
+
 .modal-hero {
     position: absolute;
 
@@ -24,8 +28,8 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms linear;
 
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    min-height: 609px;
     border-radius: 4px;
 
     background-color: var(--button-accent-color);
@@ -63,10 +67,15 @@
         }
 }
 
+// В .backdrop-title
+// было @include font(Roboto, 700, 20px, 1.15, 0.03em);
+// стало @include font(Roboto, 700, 20px, 1.5, 0.03em);
+// чтобы начать с Мобильной версии согласно макета
+
 .backdrop-title {
     color: var(--title-text-color);
 
-    @include font(Roboto, 700, 20px, 1.15, 0.03em);
+    @include font(Roboto, 700, 20px, 1.5, 0.03em);
 
     text-align: center;
 
