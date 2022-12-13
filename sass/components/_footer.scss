@@ -169,6 +169,15 @@
     // display: flex;
 }
 
+// Создал .footer-subscribe {
+//     margin-bottom: 20px;
+// }
+// Чтобы было как на макете для Мобильного
+
+.footer-subscribe {
+    margin-bottom: 20px;
+}
+
 // в .footer-in-mail изменил значение width: 358px; на 100%
 // также закомментировал margin-bottom: 5px;
 // Чтобы было как на макете для Мобильного
@@ -206,8 +215,14 @@
     &:hover {
         border-color: var(--accent-color);
     }
+
+// В  &:not(:focus):not(:placeholder-shown):invalid+.error 
+// значение display: block; заменил на display: none;
+// Чтобы было как на макете для Мобильного
+
     &:not(:focus):not(:placeholder-shown):invalid+.error {
-        display: block;
+        // display: block;
+        display: none;
     }
 }
 

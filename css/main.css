@@ -734,6 +734,10 @@ ul {
   margin-bottom: 20px;
 }
 
+.footer-subscribe {
+  margin-bottom: 20px;
+}
+
 .footer-in-mail {
   color: var(--green);
   width: 100%;
@@ -791,13 +795,13 @@ ul {
   border-color: var(--accent-color);
 }
 .footer-in-mail:not(:focus):not(:-moz-placeholder-shown):invalid + .error {
-  display: block;
+  display: none;
 }
 .footer-in-mail:not(:focus):not(:-ms-input-placeholder):invalid + .error {
-  display: block;
+  display: none;
 }
 .footer-in-mail:not(:focus):not(:placeholder-shown):invalid + .error {
-  display: block;
+  display: none;
 }
 
 .error {
