@@ -226,29 +226,43 @@
         border-color: var(--accent-color);
     }
 
+// В  &::placeholder 
+// было @include font(Roboto, 400, 12px, 1.16, 0.01em);
+// стало @include font(Roboto, 400, 14px, 1.14, 0.01em);
+// чтобы начать с Мобильной версии согласно макета
+
     &::placeholder {
         color: rgba(117, 117, 117, 0.5);
 
-        @include font(Roboto, 400, 12px, 1.16, 0.01em);
-        }
+        @include font(Roboto, 400, 14px, 1.14, 0.01em);
+    }
 }
 
 .modal-check {
     display: none;
 }
 
+// В .check-agreement закомментировал padding-left: 10px;
+// В margin-bottom: 30px; поменял значение на 31рх
+// чтобы начать с Мобильной версии согласно макета
+
 .check-agreement {
     display: flex;
-    padding-left: 10px;
+    // padding-left: 10px;
 
-    margin-bottom: 30px;
+    margin-bottom: 31px;
 }
+
+// В .modal-agreement
+// было @include font(Roboto, 400, 14px, 1.71, 0.03em);
+// стало @include font(Roboto, 400, 12px, 1.17, 0.03em);
+// чтобы начать с Мобильной версии согласно макета
 
 .modal-agreement {
     display: flex;
     color: var(--primary-text-color);
 
-    @include font(Roboto, 400, 14px, 1.71, 0.03em);
+    @include font(Roboto, 400, 12px, 1.17, 0.03em);
     align-items: center;
 
     margin-right: 7px;
@@ -272,10 +286,15 @@
     }
 }
 
+// В .agreement
+// было @include font(Roboto, 400, 14px, 1.71, 0.03em);
+// стало @include font(Roboto, 400, 12px, 1.17, 0.03em);
+// чтобы начать с Мобильной версии согласно макета
+
 .agreement {
     color: var(--accent-color);
 
-    @include font(Roboto, 400, 14px, 1.71, 0.03em);
+    @include font(Roboto, 400, 12px, 1.17, 0.03em);
 }
 
 .btn-modal {
