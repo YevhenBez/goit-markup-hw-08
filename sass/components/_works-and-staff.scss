@@ -66,6 +66,11 @@
 .staff {
     // display: flex;
     gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .staff .item {
@@ -83,6 +88,10 @@
 
 .staff-item {
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
 }
 
 // Создал .img-team {
@@ -92,6 +101,11 @@
 
 .img-team {
     width: 100%;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+    
 }
 
 // Для .staff-demyanenko и т.п.

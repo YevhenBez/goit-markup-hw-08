@@ -37,6 +37,10 @@
 
     text-align: center;
     text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        @include font(Roboto, 900, 26px, 1.61, 0.06em);
+    }
 }
 
 // В оригинале в .hero__button

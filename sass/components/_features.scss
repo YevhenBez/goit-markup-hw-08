@@ -3,6 +3,12 @@
 
 .features-list {
     // display: flex;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
 
 // В .features-list__item
@@ -13,6 +19,10 @@
 .features-list__item {
     // width: 270px;
     width: 100%;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
 }
 
 // Создал .features-list__item:not(:last-child)
@@ -21,6 +31,10 @@
 
 .features-list__item:not(:last-child) {
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
 }
 
 // В .features-list .features-list__item+.features-list__item
@@ -54,7 +68,11 @@
     color: var(--title-text-color);
 
     @include font(Roboto, 700, 14px, 1.14, 0.03em);
-    text-align: center
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
 }
 
 // В .features-list .text

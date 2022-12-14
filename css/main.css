@@ -77,6 +77,12 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .page {
   color: var(--primary-text-color);
@@ -89,6 +95,11 @@ ul {
   padding-right: 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .page-header__logo {
   color: var(--accent-color);
@@ -98,6 +109,12 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .page-header__logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .page-header__logo .page-header__logo-black {
@@ -115,6 +132,12 @@ ul {
   padding-bottom: 16px;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .page-header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
 
 .page-header__container {
   display: flex;
@@ -129,6 +152,11 @@ ul {
   border: 0;
   background-color: transparent;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .page-header__menu {
+    display: none;
+  }
 }
 
 .page-header__icon-menu {
@@ -146,6 +174,11 @@ ul {
 
 .page-header__site-nav {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .page-header__site-nav {
+    display: flex;
+  }
 }
 
 .page-header__site-nav .item:not(:last-child) {
@@ -198,16 +231,35 @@ ul {
   display: none;
   margin-left: auto;
 }
+@media screen and (min-width: 768px) {
+  .page-header__contacts-list {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header__contacts-list {
+    display: flex;
+  }
+}
 
-.page-header__contacts-list .item + .item {
-  margin-left: 50px;
+@media screen and (min-width: 1200px) {
+  .page-header__contacts-list .item + .item {
+    margin-left: 50px;
+  }
+}
+
+.page-header__item {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .page-header__item {
+    margin-bottom: 0;
+  }
 }
 
 .page-header__contacts-list a {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -221,6 +273,12 @@ ul {
 .page-header__contacts-list a:hover, .page-header__contacts-list a:focus, .page-header__contacts-list a:active {
   color: var(--accent-color);
   outline: none;
+}
+@media screen and (min-width: 1200px) {
+  .page-header__contacts-list a {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .page-header__contacts-list a:hover .page-header__mail {
@@ -263,6 +321,15 @@ ul {
   text-align: center;
   text-transform: uppercase;
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+  }
+}
 
 .hero__button {
   display: inline-block;
@@ -287,12 +354,30 @@ ul {
   background-color: var(--accent-bg-color);
 }
 
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
 .features-list__item {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .features-list__item {
+    width: 354px;
+  }
 }
 
 .features-list__item:not(:last-child) {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .features-list__item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .features-list__link {
@@ -314,6 +399,11 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .features-list .features-list__title {
+    text-align: left;
+  }
 }
 
 .features-list .text {
@@ -378,6 +468,12 @@ ul {
 .staff {
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .staff {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 .staff .item {
   background: #FFFFFF;
@@ -389,9 +485,19 @@ ul {
 .staff-item {
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .staff-item {
+    margin-bottom: 0;
+  }
+}
 
 .img-team {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .img-team {
+    width: 354px;
+  }
 }
 
 .staff-demyanenko,
@@ -476,6 +582,11 @@ ul {
 .item-clients {
   width: 210px;
   height: 92px;
+}
+@media screen and (min-width: 768px) {
+  .item-clients {
+    width: 226px;
+  }
 }
 
 .clients-link {
@@ -630,9 +741,23 @@ ul {
 .footer-container {
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 .footer-contacts {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-contacts {
+    margin-right: 165px;
+    margin-bottom: 0;
+  }
 }
 
 .logo-footer {
@@ -683,6 +808,11 @@ ul {
 .footer-join {
   margin-bottom: 60px;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-join {
+    margin-bottom: 102px;
+  }
 }
 
 .footer-title {
@@ -802,6 +932,11 @@ ul {
 }
 .footer-in-mail:not(:focus):not(:placeholder-shown):invalid + .error {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .footer-in-mail {
+    width: 450px;
+  }
 }
 
 .error {
