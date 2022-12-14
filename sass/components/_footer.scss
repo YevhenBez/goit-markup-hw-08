@@ -22,6 +22,10 @@
 
         justify-content: center;
     }
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 // в .footer-contacts
@@ -37,6 +41,10 @@
         margin-right: 165px;
         margin-bottom: 0;
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+    }
 }
 
 // В .logo-footer
@@ -46,6 +54,10 @@
 .logo-footer {
     display: block;
     margin-bottom: 28px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 20px;
+    }
 }
 
 .list-contacts a {
@@ -60,6 +72,10 @@
 .footer-map,
 .footer-mail {
     margin-bottom: 12px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+    }
 }
 
 .list-contacts .link-map {
@@ -96,6 +112,10 @@
     font-style: normal;
 
     @include font(Roboto, 400, 14px, 1.14, 0.03em);
+
+    @media screen and (min-width: 1200px) {
+        @include font(Roboto, 400, 14px, 1.71, 0.03em);
+    }
 }
 
 // в .footer-join 
@@ -111,6 +131,14 @@
 
     @media screen and (min-width: 768px) {
         margin-bottom: 102px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+
+        margin-bottom: 0;
+
+        text-align: left;
     }
 }
 
@@ -184,6 +212,10 @@
 
 .footer-mailing {
     // display: flex;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 // Создал .footer-subscribe {
@@ -193,6 +225,10 @@
 
 .footer-subscribe {
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
 }
 
 // в .footer-in-mail изменил значение width: 358px; на 100%
@@ -240,10 +276,20 @@
     &:not(:focus):not(:placeholder-shown):invalid+.error {
         // display: block;
         display: none;
+
+        @media screen and (min-width: 1200px) {
+            display: block;
+        }
     }
 
     @media screen and (min-width: 768px) {
         width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+
+        margin-bottom: 5px;
     }
 }
 

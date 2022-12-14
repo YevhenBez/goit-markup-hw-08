@@ -35,6 +35,11 @@
     background-color: var(--button-accent-color);
 
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        min-height: 581px;
+    }
 }
 
 .backdrop.is-hidden .modal-hero {
@@ -80,6 +85,10 @@
     text-align: center;
 
     margin-bottom: 12px;
+
+    @media screen and (min-width: 1200px) {
+        @include font(Roboto, 700, 20px, 1.15, 0.03em);
+    }
 }
 
 .name-user,
@@ -235,6 +244,10 @@
         color: rgba(117, 117, 117, 0.5);
 
         @include font(Roboto, 400, 14px, 1.14, 0.01em);
+
+        @media screen and (min-width: 1200px) {
+            @include font(Roboto, 400, 12px, 1.16, 0.01em);
+        }
     }
 }
 
@@ -251,6 +264,12 @@
     // padding-left: 10px;
 
     margin-bottom: 31px;
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 10px;
+
+        margin-bottom: 30px;
+    }
 }
 
 // В .modal-agreement
@@ -266,6 +285,10 @@
     align-items: center;
 
     margin-right: 7px;
+
+    @media screen and (min-width: 1200px) {
+        @include font(Roboto, 400, 14px, 1.71, 0.03em);
+    }
 }
 
 .modal-agreement span {
@@ -295,6 +318,10 @@
     color: var(--accent-color);
 
     @include font(Roboto, 400, 12px, 1.17, 0.03em);
+
+    @media screen and (min-width: 1200px) {
+        @include font(Roboto, 400, 14px, 1.71, 0.03em);
+    }
 }
 
 .btn-modal {
