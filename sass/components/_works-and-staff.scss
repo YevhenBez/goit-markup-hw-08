@@ -5,6 +5,10 @@
 .section-works {
     padding-top: 0px;
     display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
 }
 
 .list-works {
@@ -57,6 +61,11 @@
     @include font(Roboto, 700, 28px, 1.18, 0.03em);
 
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        @include font(Roboto, 700, 36px, 1.16, 0.03em);
+        margin-bottom: 50px;
+    }
 }
 
 // В .staff
@@ -105,6 +114,10 @@
     @media screen and (min-width: 768px) {
         width: 354px;
     }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
     
 }
 
@@ -118,6 +131,10 @@
 .staff-repina,
 .staff-ermakov {
     padding: 30px 0px 24px;
+
+    @media screen and (min-width: 1200px) {
+        padding: 30px 0px;
+    }
 }
 
 // В .staff-title
