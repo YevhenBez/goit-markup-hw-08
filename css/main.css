@@ -295,6 +295,13 @@ ul {
   fill: currentColor;
 }
 
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
 .hero {
   max-width: 1600px;
   margin-left: auto;
