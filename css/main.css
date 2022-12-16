@@ -300,6 +300,120 @@ ul {
   top: 0;
   width: 100vw;
   height: 100vh;
+  background-color: var(--button-accent-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
+  padding-top: 48px;
+  padding-left: 40px;
+  padding-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+  z-index: 1;
+}
+
+.button-menu {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 0px;
+  border: 0px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu-close {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.button-menu:hover .menu-close, .button-menu:focus .menu-close {
+  fill: var(--accent-color);
+}
+
+.mobile-site-nav .mobile-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-item {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.mobile-item a {
+  text-decoration: none;
+  color: var(--title-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-item a:hover, .mobile-item a:focus, .mobile-item a:active {
+  color: var(--accent-color);
+}
+
+.mobile-contacts-list {
+  margin-bottom: 64px;
+}
+
+.mobile-contacts-list .mobile-contacts-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-tel {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.mobile-tel a {
+  color: var(--accent-color);
+}
+
+.mobile-mail {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.mobile-mail a {
+  color: var(--primary-text-color);
+}
+
+.mobile-contacts-item a {
+  text-decoration: none;
+}
+
+.mobile-soc {
+  display: flex;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+
+.mobile-soc .mobile-soc-item:not(:last-child) {
+  padding-right: 10px;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: rgba(33, 33, 33, 0.2);
+}
+
+.mobile-soc .mobile-soc-item:not(:first-child) {
+  padding-left: 10px;
+}
+
+.mobile-soc a {
+  text-decoration: none;
+  color: var(--accent-color);
 }
 
 .hero {

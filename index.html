@@ -25,7 +25,7 @@
 <!-- Добавил <button class="page-header__menu" type="button"> со всеми вложениями
 чтобы было как на макете для Мобильного -->
 
-            <button class="page-header__menu" type="button" >
+            <button class="page-header__menu" type="button" data-menu-open>
                 <svg class="page-header__icon-menu" width="40px" height="40px">
                     <use href="./images/icons.svg#menu"></use>
                 </svg>
@@ -53,12 +53,41 @@
                 </li>
             </ul>
         </div>
-        <div class="mobile-menu is-hidden">
-            <button class="button-menu" type="button" >
-                <svg class="modal-close" width="40px" height="40px">
+        <div class="mobile-menu is-hidden" data-menu>
+            <button class="button-menu" type="button" data-menu-close>
+                <svg class="menu-close" width="40px" height="40px">
                     <use href="./images/icons.svg#mobile-menu-close"></use>
                 </svg>
             </button>
+            <ul class="mobile-site-nav">
+                <li class="mobile-item"><a href="./index.html" class="mobile-link-current">Студія</a></li>
+                <li class="mobile-item"><a href="./portfolio.html">Портфоліо</a></li>
+                <li class="mobile-item"><a href="#">Контакти</a></li>
+            </ul>
+            <div>
+                <ul class="mobile-contacts-list">
+                    <li class="mobile-contacts-item mobile-tel">
+                        <a href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-contacts-item mobile-mail">
+                        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-soc">
+                    <li class="mobile-soc-item">
+                        <a href="#">Instagram</a>
+                    </li>
+                    <li class="mobile-soc-item">
+                        <a href="#">Twitter</a>
+                    </li>
+                    <li class="mobile-soc-item">
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li class="mobile-soc-item">
+                        <a href="#">LinkedIn</a>
+                    </li>
+                </ul>
+            </di>
         </div>
     </header>
 
@@ -487,6 +516,8 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 
