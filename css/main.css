@@ -94,10 +94,16 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  max-width: 480px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -420,7 +426,7 @@ ul {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, var(--overlay-hero), var(--overlay-hero)), url(/images/header_mobile.jpg);
+  background-image: linear-gradient(to right, var(--overlay-hero), var(--overlay-hero)), url(../images/header_mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -431,7 +437,7 @@ ul {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, var(--overlay-hero), var(--overlay-hero)), url(/images/header_mobile-2x.jpg);
+    background-image: linear-gradient(to right, var(--overlay-hero), var(--overlay-hero)), url(../images/header_mobile-2x.jpg);
   }
 }
 @media screen and (min-width: 480px) {
@@ -441,7 +447,7 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(to right, var(--overlay-hero), var(--overlay-hero)), url(/images/header_tab.jpg);
+    background-image: linear-gradient(to right, var(--overlay-hero), var(--overlay-hero)), url(../images/header_tab.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -449,7 +455,7 @@ ul {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, var(--overlay-hero), var(--overlay-hero)), url(/images/header_tab-2x.jpg);
+    background-image: linear-gradient(to right, var(--overlay-hero), var(--overlay-hero)), url(../images/header_tab-2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -457,7 +463,7 @@ ul {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(to right, var(--overlay-hero), var(--overlay-hero)), url(/images/discussion.jpg);
+    background-image: linear-gradient(to right, var(--overlay-hero), var(--overlay-hero)), url(../images/discussion.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -465,7 +471,7 @@ ul {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, var(--overlay-hero), var(--overlay-hero)), url(/images/header_desk-2x.jpg);
+    background-image: linear-gradient(to right, var(--overlay-hero), var(--overlay-hero)), url(../images/header_desk-2x.jpg);
   }
 }
 

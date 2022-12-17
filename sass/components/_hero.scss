@@ -13,7 +13,7 @@
     background-image: linear-gradient(to right,
             var(--overlay-hero),
             var(--overlay-hero)),
-        url(/images/header_mobile.jpg);
+        url(../images/header_mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -24,7 +24,7 @@
         background-image: linear-gradient(to right,
                 var(--overlay-hero),
                 var(--overlay-hero)),
-            url(/images/header_mobile-2x.jpg);
+            url(../images/header_mobile-2x.jpg);
     }
 
     background-color: var(--hero-bg-color);
@@ -40,7 +40,7 @@
         background-image: linear-gradient(to right,
                 var(--overlay-hero),
                 var(--overlay-hero)),
-            url(/images/header_tab.jpg);
+            url(../images/header_tab.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -51,7 +51,7 @@
             background-image: linear-gradient(to right,
                     var(--overlay-hero),
                     var(--overlay-hero)),
-                url(/images/header_tab-2x.jpg);
+                url(../images/header_tab-2x.jpg);
         }
     }
 
@@ -64,7 +64,7 @@
         background-image: linear-gradient(to right,
                 var(--overlay-hero),
                 var(--overlay-hero)),
-            url(/images/discussion.jpg);
+            url(../images/discussion.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -75,7 +75,7 @@
                 background-image: linear-gradient(to right,
                         var(--overlay-hero),
                         var(--overlay-hero)),
-                    url(/images/header_desk-2x.jpg);
+                    url(../images/header_desk-2x.jpg);
             }
     }
 }
